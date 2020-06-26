@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Revista Analema</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    </head>
+<body>
+    
+<header>
+    <img src="img/logo.png" id="logo" alt="revista analema">
+    <div id="sea"><input type="text" size="6" placeholder="buscar"><button type="submit"><img src="img/buscar.png" id="search" alt="buscar">
+        </button>
+    </div>
+    <button class="sus">boletín</button>
+    <div class="bole">
+        <p>Reciba nuestras noticias en su correo electrónico.</p>
+        <p><input type="text" placeholder="nombre" class="bolet"></p>
+        <p><input type="email" placeholder="correo" class="bolet"></p>
+        <p><input type="submit" value="suscribirse"></p>
+    </div>
+</header>
+    
+<nav> 
+    <p><a class="articulo" href="sci.html" id="sci">ciencia</a></p> <p><a class="articulo" href="art.html" id="art">arte</a></p>
+    </nav>
+    
+<main>
+<div id="newer">
+            <div id="pqvb" class="principal">
+            <p><a class="articulo" href="articulos/sci/pqvb.html"><img class="img" src="img/tromposinfondo.png" alt="giróscopio">Por qué no se vuelca una bicicleta.</a> Por <a class="autor" href="autores/ac.html">Albeiro Carmelo.</a></p>  
+            <p>La bicicleta, contrario a la observación común, cuando va recta en realidad hace una trayectoria serpenteante.</p>
+        </div>   
+        <div id="rpa" class="seg">
+            <p><a class="articulo" href="articulos/art/rpa.html">Reseña de plano aéreo.</a> Por <a class="autor" href="autores/cm.html">Camilo Mandarino.</a></p>
+            <p>La séptima película producida por cinesmo films ya esta disponible al público.</p>
+        </div>
+        
+        <div id="anterior" class="ter">
+        <a class="articulo" href="">Otro anterior</a> Por <a class="autor" href="autores/">Autor</a>
+        <p>subtitulo</p>
+        </div>
+    </div>
+    
+<div id="older">
+    <div>
+    <p><a class="articulo" href="articulos/">Otro articulo.</a> Por <a class="autor" href="autores/">Autor.</a></p>
+    <p>subtitulo</p>
+    </div>
+    
+    <div>
+    <p><a class="articulo" href="articulos/">Otro articulo.</a> Por <a class="autor" href="autores/">Autor.</a></p>
+    <p>subtitulo</p>
+    </div>
+
+</div>
+
+
+</main> 
+
+
+
+<footer><p>La revista Analema apareció el ocho de mayo.</p></footer>
+
+<script>
+var bol = document.getElementsByClassName("sus");
+var i;
+
+for (i = 0; i < bol.length; i++) {
+  bol[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var bole = this.nextElementSibling;
+    if (bole.style.display === "block") {
+      bole.style.display = "none";
+    } else {
+      bole.style.display = "block";
+    }
+  });
+} 
+
+
+</script>
+    
+</body>
+</html>

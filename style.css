@@ -1,0 +1,61 @@
+
+body {margin: 0 auto; max-height: 1000px; max-width: 1000px; width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 16px;
+display: grid; 
+grid-template-areas: "header"
+                     "nav"
+                     "main"
+                     "footer";
+}
+
+.articulo {text-decoration: none; color: black; font-weight: bold;}
+.autor {text-decoration: none; color: black; font-weight: bold; }
+.img {width: 150px; float: left;}
+
+
+
+header {grid-area: header;   border-bottom-style: solid; text-align: center; box-sizing: border-box; padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo buscar boletin"
+                         "logo buscar bole";
+}
+#logo {grid-area: logo; width: 100%;}
+button, input {background-color: white; border: none; font-size: 16px; font-weight: bold;}
+.sus {grid-area: boletin; }
+.bole {width: 100%; display: none; grid-area: bole; text-align: justify;}
+sea {grid-area: buscar; width: 100%;}
+#search {width: 20px;}
+input[type=text] {font-size: 16px; border: none;}
+header .bolet{font-size: 16px; border: 1px; border-style: solid; border-color: gainsboro; width: 100%;}
+
+nav {grid-area: nav; text-align: center;
+display: grid; 
+grid-template-columns: 25% 25%;
+}
+
+main {grid-area: main; margin: 0 auto;
+    display: grid; grid-gap: 2%;
+    grid-template-areas: "newer"
+                         "older";
+}
+
+#newer  {grid-area: newer; margin: 0 auto;
+    display: grid; grid-gap: 2%;
+    grid-template-columns: 59% 39%;
+    grid-template-rows: 49% 49%;
+    grid-template-areas: "principal segundo"
+                         "principal tercero";
+}
+ 
+#older {grid-area: older;
+    display: grid; grid-gap: 2%;
+    grid-template-columns: 49% 49%;
+}
+
+.principal {grid-area: principal; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
+.seg { grid-area: segundo; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px;}
+.ter {grid-area: tercero; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
+
+#older>div {width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
+
+footer {grid-area: footer; text-align: center;}
