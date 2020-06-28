@@ -1,5 +1,4 @@
-
-body {margin: 0 auto; max-height: 1000px; max-width: 1000px; width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 16px;
+body {margin: 0 auto; max-height: 1000px; max-width: 1000px; width: 100%; font-family: Arial, Helvetica, sans-serif;
 display: grid; 
 grid-template-areas: "header"
                      "nav"
@@ -7,8 +6,10 @@ grid-template-areas: "header"
                      "footer";
 }
 
-.articulo {text-decoration: none; color: black; font-weight: bold;}
-.autor {text-decoration: none; color: black; font-weight: bold; }
+a {color: black; text-decoration: none;}
+.articulo {font-weight: bold; font-size: 17px;}
+.autor {font-weight: bold; font-size: 15px;}
+.subtitulo {font-size: 16px;}
 .img {width: 150px; float: left;}
 
 
@@ -44,18 +45,15 @@ main {grid-area: main; margin: 0 auto;
     grid-template-columns: 59% 39%;
     grid-template-rows: 49% 49%;
     grid-template-areas: "principal segundo"
-                         "principal tercero";
-}
- 
-#older {grid-area: older;
-    display: grid; grid-gap: 2%;
-    grid-template-columns: 49% 49%;
-}
+                         "principal tercero";}
 
 .principal {grid-area: principal; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
 .seg { grid-area: segundo; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px;}
 .ter {grid-area: tercero; width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
 
+#older {grid-area: older;
+    display: grid; grid-gap: 2%;
+    grid-template-columns: 49% 49%;}
 #older>div {width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
 
 footer {grid-area: footer; text-align: center;}
