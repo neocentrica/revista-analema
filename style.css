@@ -59,3 +59,5 @@ main {grid-area: main; margin: 0 auto;
 #older>div {width: 100%;  border: 1px; border-style: solid; border-bottom: none; border-right: none; box-sizing: border-box; padding: 5px; }
 
 footer {grid-area: footer; text-align: center;}
+
+@media screen and (max-width: 600px){#newer {grid-template-columns: 49% 49%;}}
